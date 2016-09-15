@@ -1,0 +1,13 @@
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.Repository.dll
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.Repository.pdb
+C:\Working\GRM\GRM.Repository\bin\Debug\CsvHelper.dll
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.ApplicationInfrastructure.dll
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.Domain.dll
+C:\Working\GRM\GRM.Repository\bin\Debug\NLog.dll
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.ApplicationInfrastructure.pdb
+C:\Working\GRM\GRM.Repository\bin\Debug\GRM.Domain.pdb
+C:\Working\GRM\GRM.Repository\bin\Debug\CsvHelper.xml
+C:\Working\GRM\GRM.Repository\bin\Debug\NLog.xml
+C:\Working\GRM\GRM.Repository\obj\Debug\GRM.Repository.csprojResolveAssemblyReference.cache
+C:\Working\GRM\GRM.Repository\obj\Debug\GRM.Repository.dll
+C:\Working\GRM\GRM.Repository\obj\Debug\GRM.Repository.pdb

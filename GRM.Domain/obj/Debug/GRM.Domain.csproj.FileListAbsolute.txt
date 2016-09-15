@@ -1,0 +1,4 @@
+C:\Working\GRM\GRM.Domain\bin\Debug\GRM.Domain.dll
+C:\Working\GRM\GRM.Domain\bin\Debug\GRM.Domain.pdb
+C:\Working\GRM\GRM.Domain\obj\Debug\GRM.Domain.dll
+C:\Working\GRM\GRM.Domain\obj\Debug\GRM.Domain.pdb
