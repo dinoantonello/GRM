@@ -104,7 +104,8 @@ namespace GRM.Tests.IntegrationTests.RepositoryTests
         }
 
 
-        
+
+
         [TestCase(-2, 0, Description = "ShouldNotReturnContractsThatHaveNotYetStarted") ]
         [TestCase(0, 7, Description = "ShouldReturnContractsThatAreCurrent")]
         [TestCase(2, 0, Description = "ShouldNotReturnContractsThatHaveExpired")]
@@ -125,6 +126,32 @@ namespace GRM.Tests.IntegrationTests.RepositoryTests
             var actualCount = actual.Count();
 
             Assert.AreEqual(expectedCount, actualCount);
+
+        }
+
+        [Test]
+        public void ShouldReturnContractsOrderByArtist()
+        {
+            _deliveryPartnerName = "ITunes";
+            _effectiveDate = new DateTime(2012, 2, 1);
+
+
+            sampleContracts = new List<MusicContract>();
+            var unorderedList = new List<string> { "D", "C", "B", "A" };
+            foreach (var artist in unorderedList)
+            {
+                sampleContracts.Add(new MusicContract() { Artist = artist, Title = "A", Usages = new List<DistributionPartner>() { new DistributionPartner() { Partner = _deliveryPartnerName, Usage = "digital download" } }, StartDate = _effectiveDate.AddDays(-1) });
+            }
+
+            var actual = Execute();
+
+
+            var orderedList = unorderedList.OrderBy(x => x).ToList();
+            for (int i = 0; i < orderedList.Count; i++)
+            {
+                Assert.AreEqual(orderedList.ElementAt(i), actual.ElementAt(i).Artist);
+            }
+
 
         }
 
